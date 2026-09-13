@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Chanchala 💖 | I'm So Sorry</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated Light Blobs -->
+    <div class="bg-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Music / Audio Toggle -->
+    <button id="audio-toggle" class="audio-toggle-btn" onclick="toggleAudio()">
+        🎵 Music: Soft Ambience
+    </button>
+
+    <!-- Main Container -->
+    <div class="container">
+        
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="heart-badge">💖 SPECIAL MESSAGE FOR CHANCHALA 💖</div>
+            <h1 id="hero-title" class="hero-title">I'm So Truly Sorry, Chanchala 🥺❤️</h1>
+            <div class="typewriter-container">
+                <span id="typewriter" class="typewriter-text"></span>
+            </div>
+        </header>
+
+        <!-- Apology Note Card -->
+        <section class="glass-card">
+            <h2 id="apology-title" class="section-title">A Note From My Heart 💌</h2>
+            <div id="apology-text" class="letter-content">
+                Loading heartfelt message...
+            </div>
+        </section>
+
+        <!-- Reasons Why You Mean Everything -->
+        <section class="glass-card">
+            <h2 class="section-title">Why You Mean The World To Me 🌸</h2>
+            <div id="reasons-grid" class="reasons-grid">
+                <!-- Populated dynamically from config.js -->
+            </div>
+        </section>
+
+        <!-- Love & Forgiveness Meter -->
+        <section class="glass-card">
+            <h2 class="section-title">Interactive Forgiveness & Love Meter 🌡️💖</h2>
+            <p style="color: var(--text-secondary); margin-bottom: 16px;">Slide to set your current mood & forgiveness level for me!</p>
+            <div class="meter-container">
+                <input type="range" id="meter-slider" class="meter-slider" min="0" max="100" value="50">
+                <div id="meter-status" class="meter-status">Getting warmer! 💕 (50%)</div>
+            </div>
+        </section>
+
+        <!-- Apology Coupons -->
+        <section class="glass-card">
+            <h2 class="section-title">Apology Coupons For Chanchala 🎟️</h2>
+            <p style="color: var(--text-secondary);">These coupons are 100% valid, non-expiring, and can be redeemed whenever you want!</p>
+            <div id="coupons-grid" class="coupons-grid">
+                <!-- Populated dynamically from config.js -->
+            </div>
+        </section>
+
+        <!-- Will You Forgive Me Interactive Quest -->
+        <section class="glass-card forgive-section">
+            <h2 class="forgive-title">Chanchala, Will You Forgive Me? 🥺👉👈</h2>
+            <div class="btn-group">
+                <button id="btn-yes" class="btn-yes">YES! 💕</button>
+                <button id="btn-no" class="btn-no">No 🥺</button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            Crafted with all my love, endless apologies, and sweet memories for Chanchala 💕
+        </footer>
+
+    </div>
+
+    <!-- Celebration Modal Popup -->
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-card">
+            <div class="modal-icon">🎉💖</div>
+            <h3 id="modal-title" class="modal-title">YAAAAY!</h3>
+            <p id="modal-body" class="modal-body">Thank you for forgiving me!</p>
+            <button id="modal-close" class="modal-close-btn">I Love You So Much! 💕</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="config.js"></script>
+    <script src="cursor.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
